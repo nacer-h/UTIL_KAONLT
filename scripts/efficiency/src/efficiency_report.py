@@ -69,6 +69,7 @@ def dictionary(UTILPATH,ROOTPrefix,runNum,MaxEvent,DEBUG=False):
             '(current_cut)_Total_COIN_Triggers': None ,
             'Pre-Scaled_COIN_Triggers': None ,
             'Accepted_COIN_Triggers': None ,
+            'COIN_Trigger_Rate': None ,
             # EDTM
             'EDTM_Accepted_Triggers': None ,
             'HMS_EDTM_Accepted_Triggers': None ,

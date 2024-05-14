@@ -132,8 +132,8 @@ elif [[ $p_flag = "true" && $s_flag = "true" ]]; then
     else
 	ROOTPREFIX=replay_${spec}_production
 	HGCERPREFIX=${ANATYPE}_${SPEC}_replay_production
-	inputFile="${REPLAYPATH}/UTIL_BATCH/InputRunLists/KaonLT_2018_2019/Prod_ALL"
-	#inputFile="${REPLAYPATH}/UTIL_BATCH/InputRunLists/KaonLT_2018_2019/Prod_Test"
+	#inputFile="${REPLAYPATH}/UTIL_BATCH/InputRunLists/KaonLT_2018_2019/Prod_ALL"
+	inputFile="${REPLAYPATH}/UTIL_BATCH/InputRunLists/KaonLT_2018_2019/ProductionLH2_3p8_4p9"
     fi
     #python3 plot/plot_efficiency.py ${ROOTPREFIX} ${RunType} ${DATE}
     python3 plot/plot_efficiency_beam.py ${ROOTPREFIX} ${RunType} ${DATE}
@@ -153,8 +153,9 @@ elif [[ $s_flag = "true" ]]; then
     else
 	ROOTPREFIX=replay_${spec}_production
 	HGCERPREFIX=${ANATYPE}_${SPEC}_replay_production	
-	inputFile="${REPLAYPATH}/UTIL_BATCH/InputRunLists/KaonLT_2018_2019/ProductionLH2_ALL"
+	#inputFile="${REPLAYPATH}/UTIL_BATCH/InputRunLists/KaonLT_2018_2019/ProductionLH2_ALL"
 	#inputFile="${REPLAYPATH}/UTIL_BATCH/InputRunLists/KaonLT_2018_2019/Prod_Test"
+	inputFile="${REPLAYPATH}/UTIL_BATCH/InputRunLists/KaonLT_2018_2019/ProductionLH2_3p8_4p9"
     fi
 elif [[ $r_flag = "true" ]]; then
     RunType=$2
@@ -167,8 +168,8 @@ elif [[ $r_flag = "true" ]]; then
 	ROOTPREFIX=replay_coin_production
 	HGCERPREFIX=${ANATYPE}_coin_replay_production	
 	#inputFile="${REPLAYPATH}/UTIL_BATCH/InputRunLists/KaonLT_2018_2019/ProductionLH2_ALL"
-	inputFile="${REPLAYPATH}/UTIL_BATCH/InputRunLists/KaonLT_2018_2019/Prod_ALL"
-	#inputFile="${REPLAYPATH}/UTIL_BATCH/InputRunLists/KaonLT_2018_2019/Prod_Test"
+	#inputFile="${REPLAYPATH}/UTIL_BATCH/InputRunLists/KaonLT_2018_2019/Prod_ALL"
+	inputFile="${REPLAYPATH}/UTIL_BATCH/InputRunLists/KaonLT_2018_2019/ProductionLH2_3p8_4p9"
     fi      
 else
     RunType=$1
@@ -181,8 +182,8 @@ else
 	ROOTPREFIX=replay_coin_production
 	HGCERPREFIX=${ANATYPE}_coin_replay_production	
 	#inputFile="${REPLAYPATH}/UTIL_BATCH/InputRunLists/KaonLT_2018_2019/ProductionLH2_ALL"
-	inputFile="${REPLAYPATH}/UTIL_BATCH/InputRunLists/KaonLT_2018_2019/Prod_ALL"
-	#inputFile="${REPLAYPATH}/UTIL_BATCH/InputRunLists/KaonLT_2018_2019/Prod_Test"
+	#inputFile="${REPLAYPATH}/UTIL_BATCH/InputRunLists/KaonLT_2018_2019/Prod_ALL"
+	inputFile="${REPLAYPATH}/UTIL_BATCH/InputRunLists/KaonLT_2018_2019/ProductionLH2_3p8_4p9"
     fi    
 fi
 
